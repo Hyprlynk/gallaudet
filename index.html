@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>all about thomas gallaudet</title>
+  <style>
+    body {background-image:url("http://art.teleportacia.org/observation/vernacular/stars/pusk.jpg"); color:white; text-align:center;}
+    p {font-family:Comic Sans MS, cursive; margin:2px}
+    #counter {text-align:left; position:absolute; top:10px; left:10px; color:rgb(255,0,255); border:double; border-color:purple}  
+    h1 {color:rgb(0,255,0)}
+    #tree {position:relative; border:groove; border-width:8px; border-color:blue; margin-right:10px; margin-right:20px}
+    #tree2 {position:relative; border:ridge; border-width:8px; border-color:red; margin-right:20px; margin-right:20px}
+    #tree3 {position:relative; border:outset; border-width:8px; border-color:yellow; margin-right:20px; margin-right:20px}
+    h3 {font-family:Helvetica, sans-serif; color:coral; margin:1px;}
+    #gif {position:absolute; top:10px; right:10px}
+    #sources {font-family:serif; font-size:10px; margin:16px;}
+    #flame {position:absolute; left:10px; top:48px; z-index:-1}
+    #wow {position:absolute; left:30px;}
+    #info {border:dashed; border-width:2px}
+    #myNumber {color:white}
+    
+  </style>
+</head>
+<body>
+  <marquee scrollamount="12"><h1>All About Thomas Hopkins Gallaudet!</h1></marquee>
+  <div id=info>
+    
+  </div>
+  <div id=counter>
+    <em>you are visitor</em> <strong>[000002.2]</strong>
+  </div>
+  
+  
+  <img id=tree2 src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Thomas_hopkins_gallaudet_posthumous_oil_painting_by_george_f_wright_1851.jpg/220px-Thomas_hopkins_gallaudet_posthumous_oil_painting_by_george_f_wright_1851.jpg"; width="190">
+
+  <div id=sources>
+    <p id=sources>Sources:<br></p>
+  </div>
+  
+  <div id="myNumber"></div>
+  Click <a href="no-javascript.html" id="getNumber">here</a> to get your number.
+  
+  <script src="https://code.jquery.com/jquery-1.7.2.js">
+    var link = document.getElementById('getNumber'); // Gets the link
+    link.onclick = getNumber; // Runs the function on click
+
+    function getNumber() {
+      var minNumber = 0; // The minimum number you want
+      var maxNumber = 100; // The maximum number you want
+      var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // Generates random number
+      $('#myNumber').html(randomnumber); // Sets content of <div> to number
+      return false; // Returns false just to tidy everything up
+    }
+  
+  </script>
+</body>
+</html>
