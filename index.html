@@ -31,16 +31,7 @@
         color: rgb(0, 255, 0)
       }
 
-      #tree {
-        position: relative;
-        border: groove;
-        border-width: 8px;
-        border-color: blue;
-        margin-right: 10px;
-        margin-right: 20px
-      }
-
-      #tree2 {
+      #pic {
         position: relative;
         border: ridge;
         border-width: 8px;
@@ -49,25 +40,11 @@
         margin-right: 20px
       }
 
-      #tree3 {
-        position: relative;
-        border: outset;
-        border-width: 8px;
-        border-color: yellow;
-        margin-right: 20px;
-        margin-right: 20px
-      }
 
       h3 {
         font-family: Helvetica, sans-serif;
         color: coral;
         margin: 1px;
-      }
-
-      #gif {
-        position: absolute;
-        top: 10px;
-        right: 10px
       }
 
       #sources {
@@ -76,26 +53,17 @@
         margin: 16px;
       }
 
-      #flame {
-        position: absolute;
-        left: 10px;
-        top: 48px;
-        z-index: -1
-      }
-
-      #wow {
-        position: absolute;
-        left: 30px;
-      }
-
       #info {
-        border: dashed;
+        border: dotted;
         border-width: 2px
-      }
-
-      #myNumber {
-        color: white
-      }
+        border-color: blue;
+        border-image: 
+          linear-gradient(
+          to bottom,
+          blue, 
+          rgba(255, 255, 0, 0)
+          ) 1 100%;
+    
 
     </style>
   </head>
@@ -104,16 +72,38 @@
     <marquee scrollamount="12">
       <h1>All About Thomas Hopkins Gallaudet!</h1>
     </marquee>
+    
     <div id=info>
-
+      
+      <h3>Fun Fact #1</h3>
+      <p>Gallaudet was named after his grandfather, who was a rugged sea captain. Cool!</p>
+      <br>
+      
+      <h3>Fun Fact #2</h3>
+      <p>The original name of the school that Gallaudet created was: "The Connecticut Asylum for Deaf and Dumb Persons" Pretty progressive, right?</p>
+      <br>
+      
+      <h3>Fun Fact #3</h3>
+      <p>Gallaudet married Sophia Fowler, a deaf person and former student.</p>
+      <br>
+      
+      <h3>Fun Fact #4</h3>
+      <p>After Gallaudet retired from teaching deaf people, he decided to care for the insane. He ended up working at the Retreat for the Insane in Hartford and also the Hartford County Jail.</p>
+      <br>
+      
+      <h3>Fun Fact #5</h3>
+      <p>Gallaudet was plagued with breathing problems throughout his life.</p>
+      <br>
+      
     </div>
+    
     <div id=counter>
       <em>you are visitor</em> <strong>[000002.2]</strong>
     </div>
 
-
-    <img id=tree2 src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Thomas_hopkins_gallaudet_posthumous_oil_painting_by_george_f_wright_1851.jpg/220px-Thomas_hopkins_gallaudet_posthumous_oil_painting_by_george_f_wright_1851.jpg" ; width="190">
-
+    <img id=pic src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Thomas_hopkins_gallaudet_posthumous_oil_painting_by_george_f_wright_1851.jpg/220px-Thomas_hopkins_gallaudet_posthumous_oil_painting_by_george_f_wright_1851.jpg" ; width="190">
+    <p><em>this is a picture of Gallaudet himself</em></p>
+    
     <div id=sources>
       <p id=sources>Sources:<br></p>
     </div>
